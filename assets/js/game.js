@@ -10,7 +10,9 @@ var playerName = window.prompt("What is your robot's name?");
 
 // What is this?
 
-console.log(playerName);
+var name = "your name";
+console.log(name);
+
 
 console.log("This logs a string, good for leaving yourself a message");
 
@@ -25,7 +27,3 @@ console.log("Our robot's name is " + playerName);
 // Note the lack of quatation marks around playerName
 
 window.alert(playerName);
-
-var name = "your name";
-
-console.log(name);
