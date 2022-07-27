@@ -8,7 +8,7 @@ console.log(playerName, playerAttack, playerHealth);
 
 var enemyName = "Roborto";
 var enemyHealth = 50;
-var enemyAttack = 12;
+var enemyAttack = 10;
 
 // fight function
 var fight = function() {
@@ -43,6 +43,17 @@ var fight = function() {
     console.log(
         enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
     );
+
+    //put new under this
+    console.log(enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + "health remaining.");
+
+    //check player's health
+    if (playerHealth <= 0) {
+        window.alert(playerName + " has died!");
+    }
+    else {
+        window.alert(playerName + " still has " + playerHealth + " health left.");
+    }
 };
 
 fight();
