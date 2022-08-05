@@ -195,24 +195,19 @@ var shop = function () {
     );
 
     //use switch to carry out action
+    debugger;
     switch (shopOptionPrompt) {
-        case "REFILL":
-        case "refill":
+        case 1:
             playerInfo.refillHealth();
             break;
-        
-        case "UPGRADE":
-        case "upgrade":
+        case 2:
             playerInfo,upgradeAttack();
             break;
-
-        case "LEAVE": // new case
-        case "leave":
+        case 3:
             window.alert("Leaving the store.");
             break;
         default:
             window.alert("You did not pick a valid option. Try again.");
-            //call shop() again to force player to pick a valid option
             shop();
             break;
     }
